@@ -24,9 +24,7 @@ def get_metadata_paths():
 # Create custom data directories
 def create_custom_data_directory():
     ABS_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), "../.."))
-    print(ABS_PATH)
     DATA_PATH = os.path.join(ABS_PATH, 'data/custom')
-    print("Created 'custom data' directory: ", DATA_PATH)
 
     TRAIN_IMG = os.path.join(DATA_PATH, 'train/image/')
     TRAIN_MASK = os.path.join(DATA_PATH, 'train/mask/')
@@ -41,3 +39,14 @@ def create_custom_data_directory():
     return TRAIN_IMG, TRAIN_MASK, TEST_IMG, TEST_MASK
     
     
+    def get_custom_img_paths():
+        ABS_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), "../.."))
+        DATA_PATH = os.path.join(ABS_PATH, 'data/custom')
+
+        TRAIN_IMG = os.path.join(DATA_PATH, 'train/image/')
+        TRAIN_MASK = os.path.join(DATA_PATH, 'train/mask/')
+        TEST_IMG = os.path.join(DATA_PATH, 'test/image/')
+        TEST_MASK = os.path.join(DATA_PATH, 'test/mask/')
+
+
+        return TRAIN_IMG, TRAIN_MASK, TEST_IMG, TEST_MASK
