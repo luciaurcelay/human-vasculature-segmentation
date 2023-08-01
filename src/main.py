@@ -1,5 +1,11 @@
+import os
+
+from dataset import create_dataset
+
 def main():
-     print("Hi, this is a test")
+
+     create_dataset()
+     
 
 if __name__ == "__main__":
     main()
