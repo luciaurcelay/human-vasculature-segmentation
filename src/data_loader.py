@@ -1,13 +1,14 @@
 from utils.datasets import HubMapDataset
 from utils.config import CFG
-from utils.path import get_custom_img_paths
+from utils.paths import get_custom_img_paths
 
+import torch
 from torch.utils.data import DataLoader
 from torch.utils.data import random_split
 import gc
 
 
-def create_dataloaders(TRAIN_IMG_PATH, TRAIN_MASK_PATH, TEST_IMG_PATH, TEST_MASK_PATH):
+def create_dataloaders():
     # Clean cache
     gc.collect()
     torch.cuda.empty_cache()
@@ -32,16 +33,18 @@ def create_dataloaders(TRAIN_IMG_PATH, TRAIN_MASK_PATH, TEST_IMG_PATH, TEST_MASK
 
     # Create train validation split
     train_dataset, val_dataset = random_split(train_dataset, [0.6, 0.4])
-
+    
+    '''
     print(f'Train split length: {len(train_dataset)}')
     print(f'Val split length: {len(val_dataset)}')
     print(f'Test split length: {len(test_dataset)}')
-
+    '''
 
     # Create data loaders
     train_loader = DataLoader(train_dataset, batch_size=CFG.batch_size_train, shuffle=False)
     val_loader = DataLoader(val_dataset, batch_size=CFG.batch_size_val, shuffle=False)
     test_loader = DataLoader(test_dataset, batch_size=CFG.batch_size_val, shuffle=False)
+
 
     return train_loader, val_loader, test_loader
 

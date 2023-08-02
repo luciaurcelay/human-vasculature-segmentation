@@ -1,7 +1,7 @@
 import os
 
 from dataset import create_dataset
-from dataloader import create_dataloaders
+from data_loader import create_dataloaders
 from utils.argument_parser import create_parser
 
 def main():
@@ -10,11 +10,11 @@ def main():
      # Create custom dataset
      if args.create_dataset:
           create_dataset()
-          train_loader, val_loader, test_loader = create_dataloaders()
 
      # Train model
      if args.train:
           print("hi, you are calling train function")
+          train_loader, val_loader, test_loader = create_dataloaders()
 
      # Test model
      if args.test:

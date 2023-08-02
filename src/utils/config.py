@@ -1,7 +1,7 @@
 from segmentation_models_pytorch import utils
 import segmentation_models_pytorch as smp
 from torchvision import transforms
-
+import torch
 
 # Config class
 class CFG:
@@ -12,7 +12,7 @@ class CFG:
     org_size = 512
     
     device = torch.device('cuda') if torch.cuda.is_available() else torch.device('cpu')
-    print(device)
+    # print(device)
     use_cuda = torch.cuda.is_available()
     if use_cuda:
       torch.cuda.manual_seed(1)
