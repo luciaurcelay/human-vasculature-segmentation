@@ -1,15 +1,18 @@
 # human-vasculature-segmentation
-Project based on Kaggle competition *HuBMAP - Hacking the Human Vasculature*
+This project is part of the Kaggle competition [HuBMAP - Hacking the Human Vasculature](https://www.kaggle.com/competitions/hubmap-hacking-the-human-vasculature)
 
-![hubmap](https://github.com/luciaurcelay/palabra-del-dia/assets/93920109/ea2648af-dabd-4bb4-8d65-7fa9dc05d168)
+<p align="center">
+    <img src="assets/histology.png" alt="histology_image" width="60%" style="display: block; margin: 0 auto">
+</p>
 
 
 ## Description
 
-An in-depth paragraph about your project and overview of use.
-Respuesta a un sinfín de discusiones
-* What is the game about
-* Snapshots of the game
+:warning: Code is currently being refactored :warning:
+
+The goal of this competition is to segment instances of microvascular structures, including capillaries, arterioles, and venules.
+
+This work implements and trains a UNet architecture to solve the task.
 
 ## Getting Started
 
@@ -44,18 +47,6 @@ python main.py
 
 Congratulations! You have now successfully set up and executed the program.
 
-## Help
-
-Any advise for common problems or issues.
-```
-command to run if program contains helper info
-```
-
-## Future work
-TBD
-
 ## Authors
 
-Contributors names and contact info
-
-ex. Lucia Urcelay Ganzabal
+* Lucia Urcelay Ganzabal
