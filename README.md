@@ -2,7 +2,7 @@
 This project is part of the Kaggle competition [HuBMAP - Hacking the Human Vasculature](https://www.kaggle.com/competitions/hubmap-hacking-the-human-vasculature)
 
 <p align="center">
-    <img src="assets/histology.png" alt="histology_image" width="60%" style="display: block; margin: 0 auto">
+    <img src="assets/histology_img.png" alt="histology_image" width="80%" style="display: block; margin: 0 auto">
 </p>
 
 
@@ -44,8 +44,6 @@ This will install all the dependencies listed in the requirements.txt file.
 python main.py
 ```
 * This will run the program and execute the main functionality.
-
-Congratulations! You have now successfully set up and executed the program.
 
 ## Authors
 
