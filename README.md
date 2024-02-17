@@ -8,7 +8,7 @@ This project is part of the Kaggle competition [HuBMAP - Hacking the Human Vascu
 
 ## Description
 
-:warning: Code is currently being refactored from jupyter notebook to modular code :warning:
+:warning: Code is currently being refactored :warning:
 
 The goal of this competition is to segment instances of microvascular structures, including capillaries, arterioles, and venules.
 
